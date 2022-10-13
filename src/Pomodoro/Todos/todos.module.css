@@ -1,0 +1,40 @@
+.heading {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.descriptionList {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-left: 22px;
+  list-style: none;
+}
+
+.descriptionLi {
+  position: relative;
+  line-height: 33px;
+}
+
+.descriptionLi::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 14px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--orange-dark);
+}
+
+.todosForm {
+  width: 370px;
+}
+
+.todosLlist {
+  width: 370px;
+}

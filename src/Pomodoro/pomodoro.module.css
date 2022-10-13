@@ -1,0 +1,12 @@
+.root {
+  display: flex; 
+  gap: 16px;
+}
+
+.todos {
+  flex: 531px 0 0;
+}
+
+.timer {
+  flex: 733px 0 0;
+}

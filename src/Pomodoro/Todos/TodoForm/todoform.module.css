@@ -1,0 +1,24 @@
+.input {
+  margin-bottom: 25px;
+  padding: 0 15px;
+  width: 100%;
+  height: 55px;
+  font-weight: 300;
+  background: var(--gray-90-inv);
+}
+
+.input::placeholder {
+  color: var(--font-light-inv);
+}
+
+.button {
+  margin-bottom: 25px;
+  line-height: 17px;
+  color: white;
+  background: var(--green-light);
+  transition: background-color .3s ease;
+}
+
+.button:hover {
+  background-color: var(--green-dark);
+}

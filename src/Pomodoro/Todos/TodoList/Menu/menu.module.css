@@ -1,0 +1,71 @@
+.list {
+  position: relative;
+  margin: 0;
+  padding: 7px 0;
+  border: solid 1px var(--gray-77-inv);
+  list-style: none;
+  color: var(--font-main-inv);
+  background-color: var(--bg-main-inv);
+  box-shadow: 0px 10px 63px var(--gray-90-inv);
+}
+
+.list::before,
+.list::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  transform-origin: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  background: var(--bg-main-inv);
+}
+
+.list::before {
+  z-index: -1;
+  box-shadow: 0 0 0 1px var(--gray-77-inv);
+}
+
+.liButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  padding: 8px 15px;
+  width: 100%;
+  line-height: 17px;
+  border: none;
+  background-color: var(--bg-main-inv);
+  transition: background-color 0.3s ease;
+}
+
+.liButton:hover {
+  background-color: var(--gray-90-inv);
+}
+
+.liButton.liButton_passive {
+  cursor: default;
+}
+
+.liIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+.liButton * {
+  transition: fill 0.3s ease;
+}
+
+.liButton:hover * {
+  fill: var(--green-dark);
+}
+
+.liButton.liButton_passive * {
+  fill: var(--gray-60-inv);
+}

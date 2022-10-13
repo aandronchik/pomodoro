@@ -1,0 +1,18 @@
+.root {
+  padding: 25px;
+  color: var(--font-main);
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.text {
+  line-height: 28px;
+}
+
+.strong {
+  font-weight: 700px;
+  color: var(--orange-bright);
+}

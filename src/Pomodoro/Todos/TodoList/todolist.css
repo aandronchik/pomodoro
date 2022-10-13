@@ -1,0 +1,4 @@
+.sortable-drag {
+  transform: translateZ(10px);
+  background: black;
+}

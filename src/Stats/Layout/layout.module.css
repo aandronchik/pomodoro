@@ -1,0 +1,39 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+.gridItem {
+  background: var(--gray-f4);
+}
+
+.daily {
+  grid-column: 1 / span 3;
+  height: 260px;
+}
+
+.infographic {
+  grid-column: 4 / span 9;
+  grid-row: 1 / span 2;
+}
+
+.pomodoros {
+  grid-column: 1 / span 3;
+  height: 180px;
+}
+
+.banner {
+  grid-column-end: span 4;
+  height: 180px;
+}
+
+.banner {
+  grid-column-end: span 4;
+}
+
+.banner {
+  grid-column-end: span 4;
+}

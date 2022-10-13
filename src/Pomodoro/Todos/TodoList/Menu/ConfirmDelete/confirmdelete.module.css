@@ -1,0 +1,51 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 25px 85px;
+  color: var(--font-main); 
+  background: var(--bg-main);
+}
+
+.closer {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.closerIcon {
+  transition: fill .3s ease;
+}
+
+.closer:hover .closerIcon *{
+  fill: var(--orange-light);
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.button {
+  margin-bottom: 10px;
+  line-height: 17px;
+  color: white;
+  background: var(--orange-bright);
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--orange-dark);
+}
+
+.link {
+  border-bottom: 1px solid var(--font-main);
+  transition: border-color, .3s ease;
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--gray-c4);
+}

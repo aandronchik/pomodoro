@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0; 
+  width: 100vw;
+  height: 100vh;
+  background: var(--transparent-shadow);
+}

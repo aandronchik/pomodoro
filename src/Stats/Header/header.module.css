@@ -1,0 +1,65 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.select {
+  position: relative;
+  z-index: 1;
+  width: 370px;
+  color: var(--font-main);
+}
+
+.selectButton {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 19px 15px;
+  border: none;
+  width: 100%;
+  line-height: 17px;
+  text-align: left;
+  background-color: var(--gray-f4);
+}
+
+.selectButton .selectIcon {
+  transform-origin: 50% 40%;
+  transition: transform 0.3s ease;
+}
+
+.selectButton.selectButton_open .selectIcon {
+  transform: rotate(180deg);
+}
+
+.selectList {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-shadow: 0px 10px 63px var(--gray-90-inv);
+}
+
+.selectOption {
+  padding: 19px 15px;
+  border: none;
+  border-top: 1px solid var(--gray-e4);
+  width: 100%;
+  line-height: 17px;
+  text-align: left;
+  color: var(--font-main); 
+  background-color: var(--gray-f4);
+}
+
+.selectOption:hover {
+  background-color: var(--gray-e4);
+  transition: background-color 0.3s ease;
+}

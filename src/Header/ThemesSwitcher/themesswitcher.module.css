@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 999px;
+  padding: 0 4px;
+  border: none;
+  width: 40px;
+  height: 20px;
+  background: var(--gray-66);
+}
+
+.switcher {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border: none;
+  border-radius: 999px;
+  width: 24px;
+  height: 24px;
+  background: var(--gray-99);
+  transition: left .3s ease;
+}
+
+.switcher_dark {
+  left: unset;
+  left: 20px;
+}

@@ -1,0 +1,122 @@
+.root {
+  color: var(--gray-20-inv);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 40px;
+  color: white;
+  background-color: var(--gray-77-inv);
+  transition: background-color 0.3s ease;
+}
+
+.header.header_rest {
+  background-color: var(--green-light);
+}
+
+.header.header_work {
+  background-color: var(--orange-bright);
+}
+
+.heading {
+  font-weight: 700;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 107px;
+  background-color: var(--gray-90-inv);
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 9px;  
+  height: 170px;
+  transition: color 0.3s ease;
+}
+
+.clock.clock_rest {
+  color: var(--green-light);
+}
+
+.clock.clock_work {
+  color: var(--orange-bright);
+}
+
+.plus,
+.minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: -65px;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--gray-77-inv);
+  transition: background-color 0.3s ease;
+}
+
+.minus {
+  left: -65px;
+}
+
+.plus:hover,
+.minus:hover {
+  background-color: var(--green-dark);
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  line-height: 17px;
+}
+
+.light {
+  color: var(--font-light-inv);
+}
+
+.actions {
+  display: flex;
+  gap: 25px;
+}
+
+.button {
+  line-height: 17px;
+  color: white;
+  background: var(--green-light);
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--green-dark);
+}
+
+.button.button_orange {
+  border: 2px solid var(--orange-bright);
+  color: var(--orange-bright);
+  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.button_orange:hover {
+  border: 2px solid var(--orange-bright);
+  color: white;
+  background: var(--orange-bright);
+}
+
+.button.button_orange.button_passive {
+  border-color: var(--gray-c4);
+  color: var(--gray-c4);
+  pointer-events: none;
+}

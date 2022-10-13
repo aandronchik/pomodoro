@@ -1,0 +1,13 @@
+.container {
+  position: absolute;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 9;
+  transform: translateX(-50%);
+  min-width: 100%;
+  min-height: 100%;
+}

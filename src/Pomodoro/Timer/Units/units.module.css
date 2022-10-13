@@ -1,0 +1,44 @@
+.root {
+  --unit-width: 85px;
+  --separator-width: 40px;
+  position: relative;
+  width: calc(var(--unit-width) * 4 + var(--separator-width));
+  height: 120px;
+  overflow: hidden;
+  font-size: 150px;
+  font-weight: 200;
+}
+
+.unit {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  width: var(--unit-width);
+  height: 120px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.unit_1 {
+  transform: translateX(calc(-50% - var(--unit-width) * 2 + var(--separator-width) / 2))  translateY(-50%);
+}
+
+.unit_2 {
+  transform: translateX(calc(-50% - var(--unit-width) + var(--separator-width) / 2))  translateY(-50%);
+}
+
+.unit_separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--separator-width);
+  transform: translateX(-50%)  translateY(calc(-50% - 20px));
+}
+
+.unit_3 {
+  transform: translateX(calc(-50% + var(--unit-width) - var(--separator-width) / 2))  translateY(-50%);
+}
+
+.unit_4 {
+  transform: translateX(calc(-50% + var(--unit-width) * 2 - var(--separator-width) / 2))  translateY(-50%);
+}

@@ -1,0 +1,112 @@
+@import-normalize;
+
+@font-face {
+  font-family: 'SF UI';
+  src: url('./fonts/sfuidisplay-thin.woff2') format('woff2'),
+    url('./fonts/sfuidisplay-thin.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI';
+  src: url('./fonts/sfuidisplay-light.woff2') format('woff2'),
+    url('./fonts/sfuidisplay-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI';
+  src: url('./fonts/sfuidisplay-regular.woff2') format('woff2'),
+    url('./fonts/sfuidisplay-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI';
+  src: url('./fonts/sfuidisplay-medium.woff2') format('woff2'),
+    url('./fonts/sfuidisplay-medium.woff2') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI';
+  src: url('./fonts/sfuidisplay-bold.woff2') format('woff2'),
+    url('./fonts/sfuidisplay-bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --font-main: #333;
+  --font-light: #999;
+  --orange-light: #ea8979;
+  --orange: #ee735d;
+  --orange-bright: #dc3e22;
+  --orange-dark: #b7280f;
+  --green-light: #a8b64f;
+  --green-dark: #899441;
+  --gray-f4: #f4f4f4;
+  --gray-e4: #e4e4e4;
+  --gray-c4: #c4c4c4;
+  --gray-99: #999;
+  --gray-66: #666;
+  --gray-33: #333333;
+  --gray-15: #151515;
+  --transparent-shadow: rgba(0, 0, 0, 0.5);
+  --bg-main: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'SF UI';
+  font-size: 16px;
+  color: var(--font-main-inv);
+  background-color: var(--bg-main-inv);
+  transition: background-color 0.3s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.input {
+  border: none;
+}
+
+.button {
+  padding: 20px 50px;
+  border: none;
+}
+
+.button-link {
+  padding: 0;
+  border: none;
+  background: transparent;
+}

@@ -1,0 +1,32 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.content {
+  justify-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: auto;
+  padding: 23px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  color: var(--font-light);
+}
+
+.footer {
+  padding: 9px 0;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  color: white;
+  background-color: var(--orange-bright);
+}
